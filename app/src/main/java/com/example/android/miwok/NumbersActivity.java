@@ -43,15 +43,11 @@ public class NumbersActivity extends AppCompatActivity {
 
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
 
-        //initialize counter variable
-        int index = 0;
-        while(index < words.size()){
+        for (int index = 0; index < words.size(); index++){
             //intsructions
             TextView wordsView = new TextView(this);
             wordsView.setText(words.get(index));
             rootView.addView(wordsView);
-            //update counter variable
-            index++;
         }
     }
 }
